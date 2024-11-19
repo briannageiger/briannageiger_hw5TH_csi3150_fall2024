@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Car Sales</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Link to JS file -->
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Begin main content -->
+    <main>
+      <div class="container">
+        <!-- Filters -->
+        <div class="left">
+          <h2>Filter By</h2>
+          <!-- Filter by year of vehicle -->
+          <div class="filter-year">
+            <label for="min-year">Year of vehicle: </label>
+            <p><span>Min year: </span><span>Max year: </span></p>
+            <div class="year-select">
+              <select name="min-year" id="min-year">
+                <option value="Any">Any</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+              <select name="max-year" id="max-year">
+                <option value="Any">Any</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+          <!-- Filter by make -->
+          <div class="filter-make">
+            <p>Make:</p>
+            <form id="car-make-form">
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Toyota">Toyota
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Honda">Honda
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Ford">Ford
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Nissan">Nissan
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Chevrolet">Chevrolet
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Volkswagen">Volkswagen
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Hyundai">Hyundai
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Subaru">Subaru
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Mazda">Mazda
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Kia">Kia
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Dodge">Dodge
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Cadillac">Cadillac
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Jaguar">Jaguar
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Tesla">Tesla
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Porsche">Porsche
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="Lexus">Lexus
+              </label>
+              <label>
+                <input type="checkbox" name="car-make" id="car-make" value="BMW">BMW
+              </label>
+            </form>
+          </div>
+          <!-- Filter by mileage -->
+          <div class="filter-miles">
+            <p><label for="mileage">Mileage: </label></p>
+            <div class="mile-select">
+              <select name="mileage" id="mileage">
+                <option value="Any">Any</option>
+                <option value="Under 15,000">Under 15,000</option>
+                <option value="Under 30,000">Under 30,000</option>
+                <option value="Under 45,000">Under 45,000</option>
+                <option value="Under 60,000">Under 60,000</option>
+                <option value="Under 75,000">Under 75,000</option>
+              </select>
+            </div>
+          </div>  
+          <!-- Filter by price -->
+          <div class="filter-price">
+            <label for="min-price">Price: </label>
+            <p><span>Min price: </span><span>Max price: </span></p>
+            <div class="price-input">
+              <input 
+              id="min-price" 
+              type="number" 
+              placeholder="$0" 
+              min="0"
+              >
+              <input 
+              id="max-price" 
+              type="number" 
+              placeholder="$70,000" 
+              max="70000"
+              >
+            </div>
+          </div>
+          <!-- Filter by color -->
+          <div class="filter-color">
+            <p>Color:</p>
+            <form id="car-color-form">
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Silver">Silver
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="White">White
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Black">Black
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Blue">Blue
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Red">Red
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Gray">Gray
+              </label>
+              <label>
+                <input type="checkbox" name="car-color" id="car-color" value="Green">Green
+              </label>
+            </form>
+          </div>
+        </div>
+        <!-- Car product cards are dynamically generated with JS -->
+        <div class="right">
+          <div class="car-cards" id="car-cards"></div>
+        </div>
+      </div>
+    </main>
+    <!-- End main content -->
+  </body>
+</html>

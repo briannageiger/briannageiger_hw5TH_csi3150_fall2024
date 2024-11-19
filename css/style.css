@@ -1,0 +1,191 @@
+/* Import font styling from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: fit-content;
+  margin-left: 4%;
+  color: #413f3f;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+}
+
+.left h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.filter-year, 
+.filter-make,
+.filter-miles,
+.filter-price,
+.filter-color {
+  margin-bottom: 1.5rem;
+}
+
+.filter-year label,
+.filter-make p,
+.filter-miles label,
+.filter-price label,
+.filter-color p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.filter-year label,
+.filter-price label {
+  margin-bottom: 2rem;
+}
+
+.filter-year p,
+.filter-make p,
+.filter-miles p, 
+.filter-price p,
+.filter-color p{
+  margin-bottom: 0.5rem;
+}
+
+.filter-year span,
+.filter-miles span,
+.filter-price span {
+  font-size: 20px;
+  padding: 12px;
+}
+
+.year-select select,
+.mile-select select {
+  padding: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.price-input input {
+  font-size: 16px;
+  padding: 6px;
+}
+
+.year-select select,
+.price-input input {
+  width: 6rem;
+}
+
+.mile-select select {
+  width: 14rem;
+}
+
+#min-year,
+#mileage,
+#min-price {
+  margin-left: 12px;
+}
+
+#max-year {
+  margin-left: 20px;
+}
+
+#max-price {
+  margin-left: 26px;
+}
+
+.filter-make form,
+.filter-color form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-make form label,
+.filter-color form label {
+  margin-left: 5%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.filter-make input[type="checkbox"],
+.filter-color input[type="checkbox"] {
+  margin-right: 3%;
+  height: 18px;
+  width: 18px;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 4%;
+}
+
+.car-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-info {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 2.5rem;
+  height: 90vh;
+  width: calc(50% - 40px);
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #413f3f;
+  transition: transform 0.5s ease;
+}
+
+.card-info:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card-info h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.p-miles {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.card-info img {
+  height: 75%;
+  width: 100%;
+}
+
+.p-price {
+  font-size: 22px;
+}
+
+.p-color {
+  font-size: 18px;
+}
+
+.p-gas-miles {
+  font-size: 18px;
+}
